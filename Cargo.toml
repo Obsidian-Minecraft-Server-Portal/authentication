@@ -1,0 +1,18 @@
+[package]
+name = "obsidian-authentication"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/Obsidian-Minecraft-Server-Portal/authentication.git"
+description = "A authentication library for the obsidian minecraft server panel"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.125"
+bcrypt = "0.15.1"
+base64 = "0.22.1"
+rand = "0.9.0-alpha.2"
+log = "0.4.22"
+obsidian-sqlite = { git="https://github.com/Obsidian-Minecraft-Server-Portal/sqlite.git" }
+sqlite = "0.36.1"
